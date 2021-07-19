@@ -58,7 +58,7 @@
         <div class="single-post d-flex flex-row">
             <div class="thumb">
                 @if($job->company->logo)
-                    <img src="{{ $job->company->logo->getUrl() }}" alt="">
+                    <img class="logo-company" src="{{ $job->company->logo->getUrl() }}" alt="">
                 @endif
             </div>
             <div class="details">
