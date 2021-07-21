@@ -24,4 +24,5 @@ class JobController extends Controller
 
         return view('jobs.show', compact('job'));
     }
+
 }

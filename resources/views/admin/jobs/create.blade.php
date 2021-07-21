@@ -34,18 +34,7 @@
                 </em>
                 @endif
             </div>
-            <div class="form-group {{ $errors->has('short_description') ? 'has-error' : '' }}">
-                <label for="short_description">{{ trans('cruds.job.fields.short_description') }}</label>
-                <input type="text" id="short_description" name="short_description" class="form-control" value="{{ old('short_description', isset($job) ? $job->short_description : '') }}">
-                @if($errors->has('short_description'))
-                <em class="invalid-feedback">
-                    {{ $errors->first('short_description') }}
-                </em>
-                @endif
-                <p class="helper-block">
-                    {{ trans('cruds.job.fields.short_description_helper') }}
-                </p>
-            </div>
+
             <div class="form-group {{ $errors->has('full_description') ? 'has-error' : '' }}">
                 <label for="full_description">{{ trans('cruds.job.fields.full_description') }}</label>
                 <textarea id="full_description" name="full_description" class="ckeditor form-control">{{ old('full_description', isset($job) ? $job->full_description : '') }}</textarea>
@@ -135,6 +124,19 @@
                 @endif
                 <p class="helper-block">
                     {{ trans('cruds.job.fields.salary_helper') }}
+                </p>
+            </div>
+            <div class="form-group {{ $errors->has('link_apply') ? 'has-error' : '' }}">
+                <label for="link_apply">{{ trans('cruds.job.fields.link_apply') }}</label>
+                <input type="text" id="link_apply" name="link_apply" class="form-control" 
+                value="{{ old('link_apply', isset($job) ? $job->link_apply : '') }}">
+                @if($errors->has('link_apply'))
+                <em class="invalid-feedback">
+                    {{ $errors->first('link_apply') }}
+                </em>
+                @endif
+                <p class="helper-block">
+                    {{ trans('cruds.job.fields.link_apply_helper') }}
                 </p>
             </div>
             <div class="form-group {{ $errors->has('top_rated') ? 'has-error' : '' }}">

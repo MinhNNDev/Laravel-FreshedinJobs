@@ -30,7 +30,7 @@ class Job extends Model
         'location_id',
         'requirements',
         'full_description',
-        'short_description',
+        'link_apply',
     ];
 
     public function company()
@@ -64,7 +64,7 @@ class Job extends Model
             $query->where(function($query) {
                 $search = request()->input('search');
                 $query->where('title', 'LIKE', "%$search%")
-                    ->orWhere('short_description', 'LIKE', "%$search%")
+                    ->orWhere('link_apply', 'LIKE', "%$search%")
                     ->orWhere('full_description', 'LIKE', "%$search%")
                     ->orWhere('job_nature', 'LIKE', "%$search%")
                     ->orWhere('requirements', 'LIKE', "%$search%")

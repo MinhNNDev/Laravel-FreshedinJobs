@@ -21,15 +21,15 @@
                     @endif
                 </div>
             </div>
-            <p>
-                {!! $job->short_description !!}
-            </p>
-            <h5>Job Nature: {{ $job->job_nature }}</h5>
+            @foreach($job->categories as $id => $categories)
+            <span class="tech-stack">{{ $categories->name }}</span>
+            @endforeach
+            <h6 class="job-nature">TCCV: {{ $job->job_nature }}</h6>
             <p class="address"><span class="lnr lnr-map"></span> {{ $job->address }}</p>
             <p class="address"><span class="lnr lnr-database"></span> {{ $job->salary }}</p>
             <!-- Btn Apply -->
             <div class="row-6">
-                <a class="btn btn-success col-4" href="#">
+                <a class="btn btn-success col-4" href="{{ $job->link_apply }}" target="_blank">
                     Apply now
                 </a>
             </div>

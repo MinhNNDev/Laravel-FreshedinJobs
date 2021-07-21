@@ -13,7 +13,7 @@ class CreateJobsTable extends Migration
 
             $table->string('title');
 
-            $table->string('short_description')->nullable();
+            $table->string('link_apply')->nullable();
 
             $table->longText('full_description')->nullable();
 

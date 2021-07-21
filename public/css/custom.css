@@ -118,3 +118,18 @@ table.dataTable thead .sorting_desc {
     font-size: 15px;
     line-height: 1.5;
 }
+.job-nature {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.tech-stack {
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 100%;
+    margin: 0 10px 0 0;
+    padding: 4px 5px;
+    border: 1px solid #d2d3d3;
+    display: inline-block;
+}

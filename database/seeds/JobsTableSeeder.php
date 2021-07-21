@@ -24,7 +24,7 @@ class JobsTableSeeder extends Seeder
         {
             $job = new Job;
             $job->title = $faker->unique()->jobTitle;
-            $job->short_description = $faker->sentence;
+            $job->link_apply = $faker->sentence;
             $job->full_description = $faker->paragraph;
             $job->requirements = $faker->paragraph;
             $job->job_nature = "Full-time";

@@ -27,7 +27,7 @@
                 <h6>{{ $job->company->name }}</h6>
                 @endif
                 <p>
-                    {{ $job->short_description }}
+                    {{ $job->link_apply }}
                 </p>
                 @if($job->job_nature)
                 <h5>Job Nature: {{ $job->job_nature }}</h5>

@@ -36,14 +36,6 @@
                     </tr>
                     <tr>
                         <th>
-                            {{ trans('cruds.job.fields.short_description') }}
-                        </th>
-                        <td>
-                            {{ $job->short_description }}
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
                             {{ trans('cruds.job.fields.full_description') }}
                         </th>
                         <td>
@@ -98,6 +90,14 @@
                         </th>
                         <td>
                             {{ $job->salary }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.job.fields.link_apply') }}
+                        </th>
+                        <td>
+                            {{ $job->link_apply }}
                         </td>
                     </tr>
                     <tr>

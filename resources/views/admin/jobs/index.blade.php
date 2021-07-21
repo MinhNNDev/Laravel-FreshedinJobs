@@ -32,7 +32,7 @@
                             {{ trans('cruds.job.fields.company') }}
                         </th>
                         <th>
-                            {{ trans('cruds.job.fields.short_description') }}
+                            {{ trans('cruds.job.fields.link_apply') }}
                         </th>
                         <th>
                             {{ trans('cruds.job.fields.location') }}
@@ -70,7 +70,7 @@
                             {{ $job->company->name ?? '' }}
                         </td>
                         <td>
-                            {{ $job->short_description ?? '' }}
+                            {{ $job->link_apply ?? '' }}
                         </td>
                         <td>
                             {{ $job->location->name ?? '' }}
