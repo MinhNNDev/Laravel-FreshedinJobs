@@ -1,6 +1,6 @@
 ## Screen Shot
-![HomeSearch - List Jobs](https://github.com/MinhNNDev/Laravel-FreshedinJobs/puclic/img/HomePage.png)
-![AdminPanel - Jobs](https://github.com/MinhNNDev/Laravel-FreshedinJobs/puclic/img/AdminPanel.png)
+![HomeSearch - List Jobs](https://github.com/MinhNNDev/Laravel-FreshedinJobs/public/img/HomePage.png)
+![AdminPanel - Jobs](https://github.com/MinhNNDev/Laravel-FreshedinJobs/public/img/AdminPanel.png)
 
 ## How to use
 
